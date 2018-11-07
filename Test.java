@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
+
 
 public class Test{
 
@@ -15,24 +15,15 @@ public class Test{
 		arrayList.add(new Customer(2,"Mel","mel@gmail.com","JKL"));
 		arrayList.add(new Customer(5,"Ron","ron@gmail.com","MNO"));
 		
-		Collections.sort(arrayList, ItemNameComparator());
+		
+		Collections.sort(arrayList,new ItemNameComparator());
 		
 		for (Customer customer : arrayList) {
 			System.out.println(customer);
 		}
-		
-	
-		
-		
-		
-		}
-
-	private static Comparator ItemNameComparator() {
-		// TODO Auto-generated method stub
-		return null;
 	}
-		
-		}
+	
+}
 		
 		
 	
