@@ -1,6 +1,6 @@
 
 
-public class Customer implements Comparable<Customer> {
+public class Customer{
 
 	
 	private int id;
@@ -73,15 +73,6 @@ public String toString() {
 }
 
 	
-@Override
-public int compareTo(Customer c2) {
-	if(this.name > c2.name) {
-		return 1;
-	}else if {this.name < c2.name){
-		return -1;
-		}
-	return 0;
-}
 
 
 	@Override
